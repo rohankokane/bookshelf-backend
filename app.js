@@ -11,7 +11,7 @@ const HttpError = require('./models/http-error')
 const cors = require('cors')
 const app = express()
 
-app.options('*', cors())
+// app.options('*', cors())
 app.use(cors())
 app.use(bodyParser.json())
 // login register
@@ -47,7 +47,7 @@ mongoose
     }
   )
   .then(() => {
-    app.listen(process.env.PORT || 5000)
+    app.listen(process.env.PORT)
     console.log('db connected')
   })
   .catch((err) => {
