@@ -172,7 +172,6 @@ const updateListItem = async (req, res, next) => {
       { ...updates },
       { returnDocument: 'after' }
     )
-    console.log({ listItem })
   } catch (e) {
     const error = new HttpError(
       `Something went wrong, could not update the list item. ${e}`,
@@ -208,5 +207,3 @@ exports.getListItems = getListItems
 exports.addListItem = addListItem
 exports.updateListItem = updateListItem
 exports.deleteListItem = deleteListItem
-// exports.getUserById = getUserById
-// exports.updateUser = updateUser

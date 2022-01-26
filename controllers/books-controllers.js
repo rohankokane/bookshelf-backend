@@ -68,5 +68,3 @@ const getBookById = async (req, res, next) => {
 
 exports.queryBooks = queryBooks
 exports.getBookById = getBookById
-// exports.getUserById = getUserById
-// exports.updateUser = updateUser
